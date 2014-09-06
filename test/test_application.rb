@@ -1,5 +1,6 @@
 require_relative 'test_helper'
 
+
 class TestApp < Rulers::Application
 end
 
