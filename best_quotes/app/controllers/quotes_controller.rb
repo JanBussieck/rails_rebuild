@@ -1,5 +1,5 @@
 class QuotesController < Rulers::Controller
   def a_quote
-    "There is nothing either good or bad" + "but thinking makes it so"
+    "Don't let your fire go out " + " spark by irresplacable spark!" 
   end
 end
