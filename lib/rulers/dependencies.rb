@@ -3,11 +3,11 @@ require 'thread'
 class Object
   
   #open file and check whether class exists with same name
-  =begin
-    file_path = Rulers.to_underscore(c.to_s)
+  
+  #  file_path = Rulers.to_underscore(c.to_s)
     #open file and see whether
-    class_in_file = File.open(file_path).gets.split('<').[0].gsub(/class/,"").strip
-  =end
+  #  class_in_file = File.open(file_path).gets.split('<').[0].gsub(/class/,"").strip
+  
   def self.const_missing(c)
     mutex = Mutex.new
     mutex.synchronize{
