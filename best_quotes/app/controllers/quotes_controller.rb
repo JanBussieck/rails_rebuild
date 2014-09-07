@@ -1,5 +1,8 @@
 class QuotesController < Rulers::Controller
+  
   def a_quote
-    render :a_quote, :noun => :winking
+    @noun = "HardCoder"
+    @description = "HardCoder codes everything hard"
+    render :a_quote, :permit => [:noun, :description]
   end
 end
